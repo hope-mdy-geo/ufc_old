@@ -1,0 +1,41 @@
+<html>
+    <head>      
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
+		  <link rel="stylesheet" href="{{url_for('static', filename='css/material.min.css')}}">
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<style>
+					main
+						{
+							background-color:#fbe9e7 ;
+							flex: 1 0 auto;
+						}
+					.row
+						{
+							margin-left:40px;
+						}
+					.demo-layout-transparent 
+						{
+							background: {{url_for('static',filename='background.jpg')}} center / cover;
+						}
+					.demo-layout-transparent .mdl-layout__header,.demo-layout-transparent .mdl-layout__drawer-button 
+						{  
+							color: white;
+						}
+				.btn-large
+			{
+			margin-bottom:10px;
+			margin-top:500px;
+			}
+   			</style>
+	</head>
+	<body>
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+		</div>
+			
+			<a class="waves-effect waves-light btn-large right" href="{{url_for('home')}}"><i class="material-icons">chevron_right</i></a>
+
+			<script src="{{url_for('static',filename='js/material.min.js')}}"></script>
+           			 <script type="text/javascript" src="{{url_for('static',filename='js/materialize.min.js')}}"></script>
+	</body>
+</html>
