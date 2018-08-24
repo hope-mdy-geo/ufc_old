@@ -47,7 +47,7 @@
 
 	}
 
-	.btn-large
+	#button2
     {
 		margin-left:330px;
 		background-color:#795548;
@@ -74,6 +74,7 @@
     box-shadow: 0px 0px 6px rgba(0,0,0,0.05);
 	height:300px;
 	width:500px;
+	resize: vertical;
   }
 
 
@@ -108,17 +109,17 @@
 
 		<ul id="dropdown1" class="dropdown-content">
 
-			<li><a href="{{url_for('wintouni')}}">Win to Uni</a></li>
+			<li><a href="{{url_for('home')}}">Unicode to Zawgyi</a></li>
 
-			<li><a href="{{url_for('unitowin')}}">Uni to Win</a></li>
+			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Unicode</a></li>
 
-			<li><a href="index.html">Uni to Zawgyi</a></li>
+			<li><a href="{{url_for('wintouni')}}">WinInnwa to Unicode</a></li>
 
-			<li><a href="{{url_for('zawgyitouni')}}">Zawgyi to Uni</a></li>
+			<li><a href="{{url_for('unitowin')}}">Unicode to WinInnwa</a></li>
 
-			<li><a href="{{url_for('wintozawgyi')}}">Win to Zawgyi</a></li>
+			<li><a href="{{url_for('wintozawgyi')}}">WinInnwa to Zawgyi</a></li>
 
-			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to Win</a></li>
+			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
 
 		</ul>
 
@@ -130,7 +131,7 @@
 
 					<ul class="right hide-on-med-and-down">
 
-						<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp;Unicode  to Zawgyi&nbsp;&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a></li>
+						<li><a class="dropdown-trigger" href="#!" data-target="dropdown1">&nbsp;&nbsp;&nbsp;Unicode to Zawgyi&nbsp;&nbsp;&nbsp;<i class="material-icons right">arrow_drop_down</i></a></li>
 						<li><a  href="{{url_for('home')}}">Home</a></li>
 					</ul>
 
@@ -152,8 +153,8 @@
           </div>
         </div>
 		<!-- <a type="submit" class="waves-effect waves-light btn-large">Convert</a> -->
-		<button type="submit" class="waves-effect btn-large z-depth-0">Convert</button>
-		<button type="reset" class="waves-effect btn-large z-depth-0">Clear</button>
+		<button type="submit" class="waves-effect btn-large z-depth-0" id="button2">Convert</button>
+		<button type="reset" class="waves-effect btn-large z-depth-0" id="button1">Clear</button>
 		<!-- <input type="submit" value="Convert" class="waves-effect btn-large z-depth-0">
 		<input type="reset" value="Clear  " class="waves-effect btn-large z-depth-0" id="button1"> -->
       </form>
