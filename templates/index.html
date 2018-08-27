@@ -5,7 +5,8 @@
 	<head>
 
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
 
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -14,7 +15,14 @@
 			<script type="text/javascript" src="{{url_for('static', filename='js/app.js')}}"></script>
 
 	        <style>
-
+					@font-face {
+						font-family: 'win_innwaregular';
+						src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
+							url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
+							font-weight: normal;
+							font-style: normal;
+							font-size: 50px;
+					}
 				.footer-copyright
 					{
 						background-color:#424242;
@@ -47,14 +55,15 @@
 
 	}
 
-	#button2
+	#button1
     {
-		margin-left:330px;
+		margin-left:35%;
 		background-color:#795548;
 	}
-	#button1
+	#button2
 	{
-	margin-left:40px;
+	margin-left:5%;
+	background-color:#795548;
 	}
 
 
@@ -153,8 +162,8 @@
           </div>
         </div>
 		<!-- <a type="submit" class="waves-effect waves-light btn-large">Convert</a> -->
-		<button type="submit" class="waves-effect btn-large z-depth-0" id="button2">Convert</button>
-		<button type="reset" class="waves-effect btn-large z-depth-0" id="button1">Clear</button>
+		<button type="submit" class="waves-effect btn-large z-depth-0" id="button1" >Convert</button>
+		<button type="reset" class="waves-effect btn-large z-depth-0" id="button2">Clear</button>
 		<!-- <input type="submit" value="Convert" class="waves-effect btn-large z-depth-0">
 		<input type="reset" value="Clear  " class="waves-effect btn-large z-depth-0" id="button1"> -->
       </form>

@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $("#myinput").css("font-family","Myanmar3");
   $('form').on('submit', function (event){
 	$.ajax({
   		type: "POST",
@@ -8,10 +9,12 @@ $(document).ready(function(){
 		}
 	})
   .done(function(data){
+
     if(data.error){
       //Do something
     }
     else{
+      $("#output").css("font-family", "win_innwaregular");
       $("#output").val(data.output).show();
     }
   });

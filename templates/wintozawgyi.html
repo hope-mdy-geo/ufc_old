@@ -7,14 +7,22 @@
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 			<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
-
+			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=zawgyi' />
+			<link rel="stylesheet" href='https://mmwebfonts.comquas.com/fonts/?font=myanmar3' />
 			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 			<script type="text/javascript" src="{{url_for('static', filename='JQuery/jquery.js')}}"></script>
 			<script type="text/javascript" src="{{url_for('static', filename='js/wintozg.js')}}"></script>
 
 	        <style>
-
+					@font-face {
+						font-family: 'win_innwaregular';
+						src: url("{{url_for('static', filename='wininnwa-webfont.woff2')}}") format('woff2'),
+							url("{{url_for('static', filename='wininnwa-webfont.woff')}}") format('woff');
+							font-weight: normal;
+							font-style: normal;
+							font-size: 50px;
+					}
 				.footer-copyright
 					{
 						background-color:#424242;
