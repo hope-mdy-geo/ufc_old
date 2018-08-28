@@ -10,6 +10,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/unitozawgyi")
+def unitozawgyi():
+    return render_template("unitozawgyi.html")
+
 @app.route("/convert", methods=["POST"])
 def convert():
     myinput = request.form['myinput']
@@ -17,7 +21,7 @@ def convert():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/zawgyitouni")
 def zawgyitouni():
@@ -30,7 +34,7 @@ def convert1():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/wintouni")
 def wintouni():
@@ -43,7 +47,7 @@ def convert2():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/unitowin")
 def unitowin():
@@ -56,7 +60,7 @@ def convert3():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': ""})
 
 
 @app.route("/wintozawgyi")
@@ -71,7 +75,7 @@ def convert4():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': "No input text!"})
 
 @app.route("/zawgyitowin")
 def zawgyitowin():
@@ -85,11 +89,31 @@ def convert5():
     output = myinput
     if myinput:
         return jsonify({'output': output})
-    return jsonify({'output': "Plz write or paste text in input textarea"})
+    return jsonify({'output': ""})
 
-@app.route("/firstpages")
-def firstpage():
-    return render_template("firstpage.html")
+@app.route("/about")
+def about():
+    return render_template("about.html")
+	
+@app.route("/howitwork")
+def howitwork():
+    return render_template("howitwork.html")
+	
+@app.route("/resources")
+def resources():
+    return render_template("resources.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+	
+@app.route("/question")
+def question():
+    return render_template("question.html")
+	
+@app.route("/answer")
+def answer():
+    return render_template("answer.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
