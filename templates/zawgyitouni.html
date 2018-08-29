@@ -23,6 +23,10 @@
 							font-style: normal;
 							font-size: 50px;
 					}
+					a {
+				color:black;
+
+				}
 
 				.page-footer
 					{
@@ -111,10 +115,8 @@
 	margin-top:20px;
   }
 
-
-	</style>
-
-    <script>
+</style>
+	<script>
 
 		$(document).ready(function()
 			{
@@ -125,20 +127,21 @@
 
     </script>
 
+	</head>
+	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+		<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 
-</head>
-
-	<body>
-
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout"></div>
 			<main class="mdl-layout__content">
-			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue">
-              <span class="mdl-layout-title">&nbsp;&nbsp;&nbsp;Universal Font Converter</span>
-            </div>
-              <span class="mdl-layout-title">
+			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue" id="title1">
+              <span class="mdl-layout-title" id="title1">&nbsp;&nbsp;&nbsp;Universal Font Converter</span>
+          </div>
 
-		<ul id="dropdown1" class="dropdown-content">
+          <div class="mdl-layout__header-row">
+              <span class="mdl-layout-title">
+<div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
+
+	<ul id="dropdown1" class="dropdown-content">
 
 			<li><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
 
@@ -157,88 +160,76 @@
 
 			<a class="mdl-navigation__link" href="{{url_for('home')}}">&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
 			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
-			Zawgyi to Unicode<i class="material-icons">arrow_drop_down</i></a></li>
-
+		Zawgyi to Unicode<i class="material-icons">arrow_drop_down</i></a></li>
+</div>
 		</div>
 	</span>
+</div>
+				<div class="page-content"><!-- Your content goes here -->
 
-		<div class="page-content">
-			<!-- Your content goes here-->
 			<div class="mdl-layout__tab-panel is-active" id="overview">
 				<form action="#">
-					<div class="row">
- 					<div class="col s6">
- 						<textarea placeholder="Please write or paste text here!" id="myinput"></textarea>
- 						<label style="margin-left:50%" for="myinput">Zawgyi</label>
- 						<br><br>
- 						<button style="margin-left: 66%" type="submit" class="waves-effect btn-small z-depth-0" id="button1">Convert</button>
+				 <div class="row">
+					<div class="col s6">
+						<textarea placeholder="Please write or paste text here!" id="myinput"></textarea>
+						<label style="margin-left:50%" for="myinput">Zawgyi</label>
+						<br><br>
+						<button style="margin-left: 66%" type="submit" class="waves-effect btn-small z-depth-0" id="button1">Convert</button>
 
- 					</div>
- 					<div class="col s6">
- 						<textarea placeholder="Converted text" id="output"></textarea>
- 						<label style="margin-left:50%" for="output">Unicode</label>
- 						<br><br>
- 						<button style="margin-left:15%" type="reset" class="waves-effect btn-small z-depth-0" id="button2">Clear</button>
- 					</div>
- 				</div>
-			<!-- <div class="center row">
-				<div class="center col s6">
+					</div>
+					<div class="col s6">
+						<textarea placeholder="Converted text" id="output"></textarea>
+						<label style="margin-left:50%" for="output"> Unicode</label>
+						<br><br>
+						<button style="margin-left:15%" type="reset" class="waves-effect btn-small z-depth-0" id="button2">Clear</button>
+					</div>
 				</div>
-				<div class="center col s6">
 
-				</div>
-			</div> -->
 		</form>
 	<section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"></section>
 	</div>
-		<footer class="mdl-mega-footer">
-      <div class="mdl-mega-footer__middle-section">
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Features</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="{{url_for('about')}}">About</a></li>
-              <li><a href="{{url_for('contact')}}">Contact us</a></li>
-          </ul>
-        </div>
+			<footer class="mdl-mega-footer">
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Details</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="{{url_for('resources')}}">Resources</a></li>
-          </ul>
-        </div>
+  <div class="mdl-mega-footer__middle-section">
+    <div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('about')}}">About</a></li>
+		<li><a href="{{url_for('contact')}}">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('resources')}}">Resources</a></li>
+      </ul>
+    </div>
+	<div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('howitwork')}}">How it Work</a></li>
+      </ul>
+    </div>
+	<div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('question')}}">Questions</a></li>
+		<li><a href="{{url_for('question')}}">Answers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">
+   @ 2018 CUMDY Interns
+    </div>
+    <ul class="mdl-mega-footer__link-list right">
+      <li><a href="">Geo-Hope Team</a></li>
 
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Technology</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="{{url_for('howitwork')}}">How it works</a></li>
+    </ul>
+  </div>
+</footer>
 
-          </ul>
-        </div>
-
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">FAQ</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="{{url_for('question')}}">Questions</a></li>
-            <li><a href="{{url_for('answer')}}">Answers</a></li>
-
-          </ul>
-        </div>
-
-      </div>
-
-     						<div class="footer-copyright">
-							<div class="container">
-								@ 2018 CUMDY Interns
-								<a class="grey-text text-lighten-4 right">Geo-Hope Team</a>
-							</div>
-						</div>
-			</footer>
 		</div>
 	</main>
 	<script src="{{url_for('static',filename='js/material.min.js')}}" ></script>

@@ -1,9 +1,9 @@
 <html>
     <head>
 		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		  <link type="text/css" rel="stylesheet" href="{{url_for('static',filename='css/materialize.css')}}"  media="screen,projection"/>
 		  <link rel="stylesheet" href="{{url_for('static',filename='css/material.min.css')}}">
 		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}"  media="screen,projection"/>
 		  <script type="text/javascript" src="{{url_for('static',filename='JQuery/jquery.js')}}"></script>
 	<style>
 			.demo-layout-transparent .mdl-layout__header,
@@ -87,8 +87,12 @@
 				  padding: 0 0px;
 				  font-size:19px;
 				}
+				a {
+				color:black;
+
+				}
 	</style>
-    <script>
+<script>
 
 		$(document).ready(function()
 			{
@@ -96,7 +100,9 @@
 			$(".dropdown-trigger").dropdown();
 
 			});
+
     </script>
+
 	</head>
 	<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
     <!-- Uses a transparent header that draws on top of the layout's background -->
@@ -106,11 +112,12 @@
 			<div class="mdl-layout__header-row mdl-layout--small-screen-only mdl-color--blue" id="title1">
               <span class="mdl-layout-title" id="title1">&nbsp;&nbsp;&nbsp;Universal Font Converter</span>
           </div>
-		  <a class="divider"></a>
+
           <div class="mdl-layout__header-row">
               <span class="mdl-layout-title">
+<div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 
-		<ul id="dropdown1" class="dropdown-content">
+	<ul id="dropdown1" class="dropdown-content">
 
 			<li><a href="{{url_for('unitozawgyi')}}">Unicode to Zawgyi</a></li>
 
@@ -125,65 +132,60 @@
 			<li><a href="{{url_for('zawgyitowin')}}">Zawgyi to WinInnwa</a></li>
 
 		</ul>
-		   <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
-				 		   <a class="mdl-navigation__link" href="{{url_for('home')}}">&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
-               <a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">&nbsp;&nbsp;
-							Choose Fonts<i class="material-icons">arrow_drop_down</i>&nbsp;&nbsp;</a></li>
+		  <div class="mdl-layout--large-screen-only mdl-layout__header-row mdl-color--blue" id="hello">
 
-				</div>
-			</span>
-         </div>
+			<a class="mdl-navigation__link" href="{{url_for('home')}}">&nbsp;&nbsp;Home</a>&nbsp;&nbsp;
+			<a class="dropdown-trigger mdl-navigation__link" href="#!" data-target="dropdown1">
+			Choose Font<i class="material-icons">arrow_drop_down</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+</div>
+		</div>
+	</span>
+</div>
 				<div class="page-content"><!-- Your content goes here -->
 
 					<img src="{{url_for('static',filename='images/cumdy.jpg')}}" width="100%" height="500px">
 
-					<footer class="mdl-mega-footer">
-						<div class="mdl-mega-footer--middle-section">
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Features</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="{{url_for('about')}}">About</a></li>
-										<li><a href="{{url_for('contact')}}">Contact us</a></li>
+				<footer class="mdl-mega-footer">
 
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Details</h1>
-									<ul class="mdl-mega-footer--link-list">
+  <div class="mdl-mega-footer__middle-section">
+    <div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Features</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('about1')}}">About</a></li>
+		<li><a href="{{url_for('contact1')}}">Contact</a></li>
+      </ul>
+    </div>
+    <div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Details</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('resources1')}}">Resources</a></li>
+      </ul>
+    </div>
+	<div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">Technology</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('howitwork1')}}">How it Work</a></li>
+      </ul>
+    </div>
+	<div class="mdl-mega-footer__drop-down-section">
+      <h1 class="mdl-mega-footer__heading">FAQ</h1>
+      <ul class="mdl-mega-footer__link-list">
+        <li><a href="{{url_for('question1')}}">Questions</a></li>
+		<li><a href="{{url_for('question1')}}">Answers</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="mdl-mega-footer__bottom-section">
+    <div class="mdl-logo">
+   @ 2018 CUMDY Interns
+    </div>
+    <ul class="mdl-mega-footer__link-list right">
+      <li><a href="">Geo-Hope Team</a></li>
 
+    </ul>
+  </div>
+</footer>
 
-										<li><a href="{{url_for('resources')}}">Resources</a></li>
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">Technology</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="{{url_for('howitwork')}}">How it works</a></li>
-
-
-
-									</ul>
-							</div>
-							<div class="mdl-mega-footer--drop-down-section">
-								<input class="mdl-mega-footer--heading-checkbox" type="checkbox" checked>
-									<h1 class="mdl-mega-footer--heading">FAQ</h1>
-									<ul class="mdl-mega-footer--link-list">
-										<li><a href="{{url_for('question')}}">Questions</a></li>
-										<li><a href="{{url_for('answer')}}">Answers</a></li>
-
-								</ul>
-							</div>
-						</div>
-						<div class="footer-copyright">
-							<div class="container">
-								@ 2018 CUMDY Interns
-								<a class="grey-text text-lighten-4 right">Geo-Hope Team</a>
-							</div>
-						</div>
-			</footer>
 		</div>
 	</main>
 	<script src="{{url_for('static',filename='js/material.min.js')}}" ></script>

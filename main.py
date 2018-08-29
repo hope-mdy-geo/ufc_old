@@ -94,11 +94,11 @@ def convert5():
 @app.route("/about")
 def about():
     return render_template("about.html")
-	
+
 @app.route("/howitwork")
 def howitwork():
     return render_template("howitwork.html")
-	
+
 @app.route("/resources")
 def resources():
     return render_template("resources.html")
@@ -106,14 +106,30 @@ def resources():
 @app.route("/contact")
 def contact():
     return render_template("contact.html")
-	
+
 @app.route("/question")
 def question():
     return render_template("question.html")
-	
-@app.route("/answer")
-def answer():
-    return render_template("answer.html")
+
+@app.route("/about1")
+def about1():
+    return render_template("about1.html")
+
+@app.route("/howitwork1")
+def howitwork1():
+    return render_template("howitwork1.html")
+
+@app.route("/resources1")
+def resources1():
+    return render_template("resources1.html")
+
+@app.route("/contact1")
+def contact1():
+    return render_template("contact1.html")
+
+@app.route("/question1")
+def question1():
+    return render_template("question1.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
