@@ -32,7 +32,7 @@ We declare that this project report or part of it was not a copy of a document d
 	
 Project Details
 Project Title -	Myanmar Language Tool
-Project ID	- GMIT Company Internship
+Project ID    - GMIT Company Internship
 
 ## Introduction
 
