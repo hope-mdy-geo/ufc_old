@@ -1,7 +1,7 @@
 # # MYANMAR LANGUAGE TOOL
 #### Director - U Ravi Chhabra (CEO of GMIT)
 #### Supervisor - Dr.Thandar Htwe (Faculty of Computer Science), University of Computer Studies (Mandalay)
-Member List: <br />
+Member List : <br />
 Ma Ei Ei Phyu  <br />
 Mg Aung Kyaw Khaing  <br />	
 Ma Nandar Lin  <br />
