@@ -71,8 +71,8 @@ JQuery is a fast, small, and feature-rich JavaScript library. It makes things li
 
 JavaScript is interpreted by the client. This means that The JavaScript code, embedded in the HTML document, will be rendered by the browser. The server’s job is to provide the HTML document. The web browser’s job is to interpreted  the HTML file and display the web page accordingly. Because all processing is performed by the client, this referred to as client-side processing.
 
-1.2.5	MATERIALIZE
-
+###	MATERIALIZE
+	Materialize css is a complete package for small projects as well as for building large scale responsive websites and HTML5 hybrid mobile apps. It includes css for color, typography, tables, grids and also helper classes etc. to name a few.
 
 
 ###	MATERIAL DESIGN LITE
