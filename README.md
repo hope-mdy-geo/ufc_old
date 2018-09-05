@@ -58,6 +58,7 @@ And we also use notepad++, vim or pycharm as text editor.
 
 
 ###	HTML (Hyper Text Makeup Language)
+
 HTML is the set of makeup symbols or codes placed in a file that is intended for display on a web page.These symbols or codes identify structural elements such as paragraphs, headings and lists.HTML can also be used to place media such as video, audio and graphics on a web page.HTML permits platform-independent display of information across a network.
 
 ###	CSS (Cascading Style Sheet)
@@ -67,16 +68,19 @@ Web designers use CSS to separate the presentation style of a web page from the 
 ###	JQUERY
 
 JQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
-1.2.4	JAVASCRIPT 
+	
+###    JAVASCRIPT 
 
 JavaScript is interpreted by the client. This means that The JavaScript code, embedded in the HTML document, will be rendered by the browser. The server’s job is to provide the HTML document. The web browser’s job is to interpreted  the HTML file and display the web page accordingly. Because all processing is performed by the client, this referred to as client-side processing.
 
 ###	MATERIALIZE
-	Materialize css is a complete package for small projects as well as for building large scale responsive websites and HTML5 hybrid mobile apps. It includes css for color, typography, tables, grids and also helper classes etc. to name a few.
+
+Materialize css is a complete package for small projects as well as for building large scale responsive websites and HTML5 hybrid mobile apps. It includes css for color, typography, tables, grids and also helper classes etc. to name a few.
 
 
 ###	MATERIAL DESIGN LITE
 
+Material Design Lite is built to provide a lightweight and basic set of Material Design components and templates for web sites. The project does not intend to provide structures to create all possible UX needs, but to provide a low-friction Material Design implementation you can build on.
 
 
 ###	PYTHON
